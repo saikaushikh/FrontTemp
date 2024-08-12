@@ -1,0 +1,41 @@
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+ 
+}
+
+.circular-logo {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  transition: width 0.3s, height 0.3s;
+}
+
+.sidebar {
+  transition: width 0.3s;
+}
+
+
+.logo-image {
+  width: 100px;
+  height: 100px;
+}

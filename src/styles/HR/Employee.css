@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0e0e0;
+}
+
+.sidebar {
+  background-color: #e0e0e0;
+}
+
+.employee-list-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1, h2, p, blockquote {
+  color: black;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+
+.employee-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.employee-card {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.employee-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee-card h2 {
+  margin: 0 0 10px;
+}
+
+.employee-card p {
+  margin: 4px 0;
+}
+
+.employee-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.employee-card button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .employee-card {
+    flex: 1 1 calc(50% - 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-card {
+    flex: 1 1 100%;
+  }
+}

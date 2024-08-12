@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0e0e0;
+}
+
+.feedback-container {
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 250px; 
+  padding: 20px;
+}
+
+.feedback-list-header {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.feedback-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.mark-read-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}

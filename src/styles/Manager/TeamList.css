@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #e0e0e0;
+}
+
+.employee-list-container {
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 250px; /* Adjust this to match the width of the sidebar */
+  box-sizing: border-box;
+}
+
+.employee-list {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.employee-list-header {
+  text-align: center;
+  margin: 0 auto; /* Center align the header */
+  padding: 30px 0; /* Increased padding for a larger header */
+  background: linear-gradient(270deg, #50026f, #0c0000);
+  border-radius: 8px; /* Adding rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adding a box shadow for depth */
+  font-size: 2em; /* Increasing the font size */
+  width: 80%; /* Adjust width to fit the content properly */
+}
+
+.employee-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the employee cards */
+  padding: 20px;
+}
+
+.employee-card {
+  border: 1px solid #ddd;
+  width: 300px;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  background: linear-gradient(60deg, #200860, #000);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adding a box shadow for depth */
+}
+
+.employee-card h2 {
+  margin: 0 0 10px;
+}
+
+.employee-card p {
+  margin: 4px 0;
+}
+
+.employee-card input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.employee-card button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #28a745;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .employee-card {
+    flex: 1 1 calc(50% - 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-card {
+    flex: 1 1 100%;
+  }
+}

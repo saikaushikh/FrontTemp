@@ -1,0 +1,62 @@
+/* LeaveApproval.css */
+
+/* Overall container styling */
+.leave-approval-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Main content area styling */
+.leave-main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Header styling */
+.headd {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Leave request card styling */
+.leave-request {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.accept-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accept-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}

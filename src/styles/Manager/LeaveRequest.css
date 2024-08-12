@@ -1,0 +1,147 @@
+/* ApplyLeave.css */
+
+/* Overall container styling */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(0deg, #50026f, #000);
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #16213e;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+/* Main content area styling */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(0deg, #50026f, #000);
+}
+
+/* Header styling */
+.headerle {
+  background: linear-gradient(270deg, #50026f, #0c0000);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  width: calc(100% - 250px); /* Adjusted width for the main content */
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Header title styling */
+.headerle h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* Form container styling */
+.form-container {
+  background: linear-gradient(90deg, #50026f, #0c0000);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Form element styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Input and textarea styling */
+textarea, input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  font-size: 14px;
+  background-color: #333;
+  color: #e0e0e0;
+  width: 100%;
+}
+
+/* Input and textarea focus styling */
+textarea:focus, input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #444;
+}
+
+/* Button styling */
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover styling */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styling */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Modal close button styling */
+.close-btn {
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.circular-logo {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  transition: width 0.3s, height 0.3s;
+}
+
+.sidebar {
+  transition: width 0.3s;
+}
